@@ -49,7 +49,7 @@
      差し替えるだけで計測が始まります。空/プレースホルダのままなら何もしません。
    ========================================================= */
 (function(){
-  var GA_ID = 'G-XXXXXXXXXX'; // ← ここをGA4の測定IDに差し替え
+  var GA_ID = 'G-8HEF34YG1C'; // WEBEAUTY GA4 測定ID
   var enabled = /^G-[A-Z0-9]{6,}$/.test(GA_ID) && GA_ID !== 'G-XXXXXXXXXX';
 
   if(enabled){
