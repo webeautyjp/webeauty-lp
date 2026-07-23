@@ -211,9 +211,11 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.5;margin:0}
 
 /* ---------- Staff photo ---------- */
 .staff--photo{padding:0;overflow:hidden}
-.staff--photo .staff-img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.staff--photo .staff-img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top center;display:block}
 .staff--photo .staff-body{padding:20px 22px}
 .staff--photo h3{margin:2px 0 8px}
+.staff-img--mono{width:100%;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#CBAd7B,#94733F);color:#fff;font-family:var(--serif);font-size:66px;letter-spacing:.05em}
 
 /* ---------- Store info ---------- */
 .store-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
