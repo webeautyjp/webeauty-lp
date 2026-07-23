@@ -23,7 +23,7 @@
 - [x] 5. 採用ページ recruit.html を作成
 - [x] 6. 入口ページ index.html を作成（大阪／麻布十番／採用への導線）
 - [x] 7. ローカル確認（DOM実測でPC/タブレット/スマホ検証・横スクロール無し・全リンク正・画像欠損0・ハンバーガー/CTA動作）※スクショ機能は当環境で不応答のため実測で代替
-- [ ] 8. GitHub リポジトリ作成 & GitHub Pages 公開（田中さんのGitHubアカウントが必要）
+- [x] 8. GitHub Pages 公開完了 → https://webeautyjp.github.io/webeauty-lp/ （全ページ・全アセット200・内容確認済み）
 - [ ] 9. 【公開後】Instagram・Googleビジネス・名刺のリンクを新URLへ差替え
 - [ ] 10. 【差替え後】旧サイト＆ドメインの解約を契約者へ依頼
 
