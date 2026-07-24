@@ -1,0 +1,18 @@
+title: "WEBEAUTY コラム"
+description: "韓国発「骨筋®コルグンセラピー」の小顔・骨格ケア専門サロン WEBEAUTY のコラム。小顔・骨格・むくみ・韓国美容のはなし。"
+url: "https://webeautyjp.github.io"
+baseurl: "/webeauty-lp"
+permalink: /blog/:title/
+timezone: Asia/Tokyo
+lang: ja
+
+# Jekyllは front matter の無い既存HTML（index/osaka/azabu/recruit/privacy）は
+# そのままコピーします。ブログ関連ファイルだけが処理対象です。
+exclude:
+  - tasks/
+  - webeauty-site/
+  - "*.zip"
+  - "*.py"
+  - README.md
+  - Gemfile
+  - vendor/

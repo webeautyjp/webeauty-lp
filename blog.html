@@ -1,0 +1,91 @@
+---
+title: コラム
+---
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>コラム｜WEBEAUTY（ウィビューティ）小顔・骨格ケアのはなし</title>
+<meta name="description" content="韓国発「骨筋®コルグンセラピー」の小顔・骨格ケア専門サロン WEBEAUTY のコラム。エラ張り・頬骨・むくみ・韓国美容など、お顔とお身体のお悩みに役立つ情報をお届けします。">
+<link rel="canonical" href="{{ '/blog.html' | absolute_url }}">
+<meta property="og:title" content="コラム｜WEBEAUTY（ウィビューティ）">
+<meta property="og:description" content="小顔・骨格ケアのお悩みに役立つコラム。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ '/blog.html' | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}">
+<meta property="og:site_name" content="WEBEAUTY（ウィビューティ）">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}">
+<meta name="theme-color" content="#FBF8F3">
+<link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" sizes="any">
+<link rel="icon" type="image/png" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site-header scrolled" style="position:sticky">
+  <a class="logo" href="{{ '/index.html' | relative_url }}"><img src="{{ '/assets/img/logo-clear.png' | relative_url }}" alt="WEBEAUTY"></a>
+  <nav class="nav">
+    <a class="navlink" href="{{ '/osaka.html' | relative_url }}">大阪店</a>
+    <a class="navlink" href="{{ '/azabu.html' | relative_url }}">麻布十番店</a>
+    <a class="navlink" href="{{ '/blog.html' | relative_url }}">コラム</a>
+    <a class="navlink" href="{{ '/recruit.html' | relative_url }}">採用</a>
+    <a class="btn btn-line" href="https://lin.ee/JdER2wZ" target="_blank" rel="noopener">LINEで予約</a>
+  </nav>
+  <button class="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav">
+  <a href="{{ '/index.html' | relative_url }}">トップ</a>
+  <a href="{{ '/osaka.html' | relative_url }}">大阪店</a>
+  <a href="{{ '/azabu.html' | relative_url }}">麻布十番店</a>
+  <a href="{{ '/blog.html' | relative_url }}">コラム</a>
+  <a href="{{ '/recruit.html' | relative_url }}">採用</a>
+</div>
+
+<section class="blog-hero">
+  <div class="container">
+    <p class="kicker">Column</p>
+    <h1 class="sec-title">コラム</h1>
+    <hr class="gold-line">
+    <p class="sec-lead" style="margin-bottom:0">小顔・骨格・むくみ・韓国美容のはなし。お顔とお身体のお悩みに役立つ情報をお届けします。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if site.posts.size > 0 %}
+    <div class="blog-list">
+      {% for post in site.posts %}
+      <a class="blog-card" href="{{ post.url | relative_url }}">
+        <img class="blog-card__img" src="{{ post.image | default: '/assets/img/og-image.jpg' | relative_url }}" alt="{{ post.title }}" loading="lazy">
+        <div class="blog-card__body">
+          <div class="blog-card__date">{{ post.date | date: "%Y.%m.%d" }}</div>
+          <div class="blog-card__title">{{ post.title }}</div>
+          <p class="blog-card__excerpt">{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 78 }}</p>
+          <span class="blog-card__more">続きを読む →</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="text-align:center;color:var(--muted)">コラムは準備中です。</p>
+    {% endif %}
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <div>&copy; <span data-year>2026</span> WEBEAUTY JAPAN ・ <a href="{{ '/privacy.html' | relative_url }}" style="color:inherit">プライバシーポリシー・運営者情報</a></div>
+      <div><a href="{{ '/index.html' | relative_url }}" style="color:#B7AC9D">トップへ戻る</a></div>
+    </div>
+  </div>
+</footer>
+<script src="{{ '/assets/main.js' | relative_url }}"></script>
+</body>
+</html>

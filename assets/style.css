@@ -309,6 +309,44 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.5;margin:0}
 .salary-table th{width:130px;background:var(--cream);font-family:var(--serif);font-weight:500;color:var(--gold-deep)}
 .salary-table tr:last-child td,.salary-table tr:last-child th{border-bottom:0}
 
+/* ---------- Blog / Column ---------- */
+.blog-hero{padding:120px 0 40px;text-align:center;background:var(--cream)}
+.blog-hero .kicker{text-align:center}
+.blog-list{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.blog-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(176,141,87,.12);display:flex;flex-direction:column;transition:transform .25s}
+.blog-card:hover{transform:translateY(-4px)}
+.blog-card__img{aspect-ratio:16/10;object-fit:cover;width:100%;background:var(--cream)}
+.blog-card__body{padding:20px 22px;display:flex;flex-direction:column;flex:1}
+.blog-card__date{font-size:12px;color:var(--gold-deep);font-family:var(--serif);letter-spacing:.05em}
+.blog-card__title{font-family:var(--serif);font-size:17px;line-height:1.6;margin:8px 0 10px;color:var(--ink)}
+.blog-card__excerpt{font-size:13px;color:var(--muted);margin:0 0 14px;flex:1}
+.blog-card__more{font-size:13px;color:var(--gold-deep);font-weight:700}
+
+.breadcrumb{font-size:12px;color:var(--muted);padding:96px 0 0}
+.breadcrumb a{color:var(--gold-deep)}
+.article{max-width:760px;margin:0 auto;padding:24px 0 10px}
+.article-head{text-align:center;margin-bottom:30px}
+.article-head .a-date{font-family:var(--serif);color:var(--gold-deep);font-size:13px;letter-spacing:.08em}
+.article-head h1{font-size:clamp(22px,4.6vw,30px);line-height:1.6;margin:12px 0 14px}
+.article-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.article-tags span{font-size:11px;background:var(--cream);border:1px solid var(--gold-soft);border-radius:999px;padding:4px 12px;color:var(--gold-deep)}
+.article-hero{width:100%;border-radius:var(--radius);margin:22px 0 32px;box-shadow:var(--shadow)}
+.article-body{font-size:15px;line-height:2.0;color:#3f3830}
+.article-body h2{font-family:var(--serif);font-size:21px;margin:38px 0 14px;padding-left:14px;border-left:4px solid var(--gold)}
+.article-body h3{font-family:var(--serif);font-size:17px;margin:26px 0 10px;color:var(--gold-deep)}
+.article-body p{margin:0 0 18px}
+.article-body ul,.article-body ol{margin:0 0 18px;padding-left:22px}
+.article-body li{margin-bottom:8px}
+.article-body img{max-width:100%;border-radius:12px;margin:12px 0}
+.article-body strong{color:var(--ink)}
+.article-body blockquote{margin:18px 0;padding:14px 18px;background:var(--cream);border-radius:10px;font-size:14px;color:var(--muted)}
+.article-note{font-size:12px;color:var(--muted);border-top:1px solid var(--gold-soft);margin-top:34px;padding-top:16px;line-height:1.8}
+.article-cta{background:var(--cream);border-radius:var(--radius);padding:32px 26px;text-align:center;margin:40px auto 0;max-width:760px}
+.article-cta h3{font-family:var(--serif);font-size:20px;margin:0 0 8px}
+.article-cta p{font-size:13.5px;color:var(--muted);margin:0 0 20px}
+.article-cta .stores{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.article-back{text-align:center;margin:36px 0 0}
+
 /* ---------- Responsive ---------- */
 @media(max-width:920px){
   .about-grid{grid-template-columns:1fr;gap:30px}
@@ -316,6 +354,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.5;margin:0}
   .voices{columns:2}
   .rc-points{grid-template-columns:repeat(2,1fr)}
   .guest-strip{grid-template-columns:repeat(3,1fr)}
+  .blog-list{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:680px){
   .section{padding:56px 0}
@@ -327,6 +366,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.5;margin:0}
   .photo-gallery{grid-template-columns:repeat(2,1fr)}
   .photo-gallery .wide{grid-column:span 2}
   .guest-strip{grid-template-columns:repeat(3,1fr)}
+  .blog-list{grid-template-columns:1fr}
   .voices{columns:1}
   .concerns{grid-template-columns:1fr}
   .store-choice{grid-template-columns:1fr}
